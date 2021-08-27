@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		EA26046F26BD90AA00F8AE48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA26046E26BD90AA00F8AE48 /* AppDelegate.swift */; };
 		EA26047126BD90AA00F8AE48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA26047026BD90AA00F8AE48 /* SceneDelegate.swift */; };
-		EA26047326BD90AA00F8AE48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA26047226BD90AA00F8AE48 /* ViewController.swift */; };
+		EA26047326BD90AA00F8AE48 /* PockemonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA26047226BD90AA00F8AE48 /* PockemonsViewController.swift */; };
 		EA26047626BD90AA00F8AE48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA26047426BD90AA00F8AE48 /* Main.storyboard */; };
 		EA26047926BD90AA00F8AE48 /* PockemoncARDS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA26047726BD90AA00F8AE48 /* PockemoncARDS.xcdatamodeld */; };
 		EA26047B26BD90AD00F8AE48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA26047A26BD90AD00F8AE48 /* Assets.xcassets */; };
 		EA26047E26BD90AD00F8AE48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA26047C26BD90AD00F8AE48 /* LaunchScreen.storyboard */; };
+		EAC9F1BD26D826180092D3CB /* PokyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC9F1BC26D826180092D3CB /* PokyTableViewCell.swift */; };
+		EAC9F1C026D829B50092D3CB /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC9F1BF26D829B50092D3CB /* NetworkController.swift */; };
+		EAC9F1C226D829C30092D3CB /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC9F1C126D829C30092D3CB /* ImageController.swift */; };
+		EAC9F1C526D95EDF0092D3CB /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC9F1C426D95EDF0092D3CB /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA26046B26BD90AA00F8AE48 /* PockemoncARDS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PockemoncARDS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA26046E26BD90AA00F8AE48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA26047026BD90AA00F8AE48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA26047226BD90AA00F8AE48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA26047226BD90AA00F8AE48 /* PockemonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockemonsViewController.swift; sourceTree = "<group>"; };
 		EA26047526BD90AA00F8AE48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA26047826BD90AA00F8AE48 /* PockemoncARDS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PockemoncARDS.xcdatamodel; sourceTree = "<group>"; };
 		EA26047A26BD90AD00F8AE48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA26047D26BD90AD00F8AE48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA26047F26BD90AD00F8AE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC9F1BC26D826180092D3CB /* PokyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokyTableViewCell.swift; sourceTree = "<group>"; };
+		EAC9F1BF26D829B50092D3CB /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		EAC9F1C126D829C30092D3CB /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		EAC9F1C426D95EDF0092D3CB /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA06176826D8201C00D4C109 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EA26046E26BD90AA00F8AE48 /* AppDelegate.swift */,
+				EA26047026BD90AA00F8AE48 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EA06176926D8203C00D4C109 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA26047426BD90AA00F8AE48 /* Main.storyboard */,
+				EA26047C26BD90AD00F8AE48 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA06176A26D8204600D4C109 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA26047226BD90AA00F8AE48 /* PockemonsViewController.swift */,
+				EAC9F1BC26D826180092D3CB /* PokyTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		EA26046226BD90AA00F8AE48 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +93,33 @@
 		EA26046D26BD90AA00F8AE48 /* PockemoncARDS */ = {
 			isa = PBXGroup;
 			children = (
-				EA26046E26BD90AA00F8AE48 /* AppDelegate.swift */,
-				EA26047026BD90AA00F8AE48 /* SceneDelegate.swift */,
-				EA26047226BD90AA00F8AE48 /* ViewController.swift */,
-				EA26047426BD90AA00F8AE48 /* Main.storyboard */,
-				EA26047A26BD90AD00F8AE48 /* Assets.xcassets */,
-				EA26047C26BD90AD00F8AE48 /* LaunchScreen.storyboard */,
+				EAC9F1C326D95EC60092D3CB /* Model */,
+				EAC9F1BE26D829940092D3CB /* Helper */,
+				EA06176826D8201C00D4C109 /* AppDelegate */,
+				EA06176A26D8204600D4C109 /* Controller */,
+				EA06176926D8203C00D4C109 /* View */,
 				EA26047F26BD90AD00F8AE48 /* Info.plist */,
 				EA26047726BD90AA00F8AE48 /* PockemoncARDS.xcdatamodeld */,
+				EA26047A26BD90AD00F8AE48 /* Assets.xcassets */,
 			);
 			path = PockemoncARDS;
+			sourceTree = "<group>";
+		};
+		EAC9F1BE26D829940092D3CB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EAC9F1BF26D829B50092D3CB /* NetworkController.swift */,
+				EAC9F1C126D829C30092D3CB /* ImageController.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EAC9F1C326D95EC60092D3CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAC9F1C426D95EDF0092D3CB /* Pokemon.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA26047326BD90AA00F8AE48 /* ViewController.swift in Sources */,
+				EAC9F1C226D829C30092D3CB /* ImageController.swift in Sources */,
+				EAC9F1C526D95EDF0092D3CB /* Pokemon.swift in Sources */,
+				EA26047326BD90AA00F8AE48 /* PockemonsViewController.swift in Sources */,
 				EA26046F26BD90AA00F8AE48 /* AppDelegate.swift in Sources */,
+				EAC9F1C026D829B50092D3CB /* NetworkController.swift in Sources */,
+				EAC9F1BD26D826180092D3CB /* PokyTableViewCell.swift in Sources */,
 				EA26047126BD90AA00F8AE48 /* SceneDelegate.swift in Sources */,
 				EA26047926BD90AA00F8AE48 /* PockemoncARDS.xcdatamodeld in Sources */,
 			);
